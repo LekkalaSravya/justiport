@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+
+    margin-top: 5px; 
+    justify-content: center;
+    align-items: center;
+    /*background: url("https://thumbs.dreamstime.com/b/court-gavel-scale-justice-law-theme-court-gavel-scale-justice-law-theme-law-lawyer-hammer-attorney-court-background-100899384.jpg");*/
+
+}
+.header{
+    margin-top: 1px; 
+    top: 0; 
+    left: 0; 
+    position: relative; 
+    width:1504px;
+    /*background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://thumbs.dreamstime.com/b/horror-dense-ghostly-dark-forest-scary-creepy-night-landscape-clumsy-tree-branches-against-backdrop-moonlight-164191654.jpg");*/
+    background-color:black;
+    height:30px;
+    padding: 2rem 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 4px 4px 2px rgb(238, 198, 40);
+}
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+     
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:  5px;
+    width:1000px;
+    height:50px;
+    align-items: center;
+    padding:1vw;
+     
+    
+}
+.header span{
+    font-size:35px;
+    font-family: 'Nosifer',cursive;
+    padding-right:250px;
+    color:yellow;
+} 
+ 
+.navigation a{
+    font-family:'Nosifer',cursive;
+    color: yellow;
+    font-size: 20px;
+    font-style: calc();
+    
+}
+.navigation a:hover{
+     
+    color:white;
+}
+.lawyer{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://thumbs.dreamstime.com/b/court-gavel-scale-justice-law-theme-court-gavel-scale-justice-law-theme-law-lawyer-hammer-attorney-court-background-100899384.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 80;
+}
+.lawyer h1{
+    padding-left: 520px;
+    color:white;
+    padding-top: 230px;
+    font-size: 35px;
+    font-family:'Nosifer',cursive;
+}
+.lawyer p{
+    padding-left: 680px;
+    margin-top: 30px;
+}
+.input-field{
+    padding: 8px 16px 8px 16px;
+    
+}
+.lawyer ul{
+    display: flex;
+    padding-left: 700px;
+    padding-top: 40px;
+    font-size: 30px;
+    font-style: calc();
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.btn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    
+}
+.btn a{
+    position: relative;
+    display:inline-block;
+    padding: 15px 30px;
+    color:aqua; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+ 
+.btn a span{
+    position: absolute;
+    display: block;
+
+}
+.btn a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height:2px; 
+    background: linear-gradient(90deg,transparent,aqua);
+}
+.btn a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.btn a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height:2px; 
+    background: linear-gradient(90deg,transparent,aqua);
+}
+.btn a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.btn a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height:100%; 
+    background: linear-gradient(90deg,transparent,aqua);
+}
+.btn a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.btn a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height:100%; 
+    background: linear-gradient(360deg,transparent,aqua);
+}
+.btn a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

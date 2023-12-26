@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header"> 
+        <img src="https://cdn.pixabay.com/photo/2014/09/17/22/39/scales-of-justice-450203__340.png"   height="100px"><span></span>
+        <nav class="navigation"> 
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href=""></a>
+        </nav>
+</header>
+    <div class="cont">
+    <p>CLIENT LOGIN / REGISTER</p>
+    <h3 >LAWYER LOGIN / REGISTER</h3>
+    </div>
+    <section class="box">
+        
+        <div class="form-box">
+            <div class ="button-box">
+                <div id="btn"></div>
+                <button type ="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type ="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+        
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="user-id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" ><a href="clienthome.html">Log in</a></button>
+            </form>
+            <form id ="register" class="input-group">
+                <input type="text" class="input-field" placeholder="user-name" required>
+                <input type="text" class="input-field" placeholder="Email-id " required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and condition </span>
+                <button type="submit" class="submit-btn" ><a href="regist.html"> Register </a></button>
+            </form>
+        </div>
+         
+            
+         
+            <div class="form-box">
+                 
+                <div class ="button-box">
+                    <div id="btn1"></div>
+                    <button type ="button" class="toggle-btn" onclick="login1()">Login</button>
+                    <button type ="button" class="toggle-btn" onclick="register1()">Register</button>
+                </div>
+            
+                <form id="login1" class="input-group">
+                    <input type="text" class="input-field" placeholder="user-id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn"><a href="#">Log in</a></button>
+                </form>
+                <form id ="register1" class="input-group">
+                    <input type="text" class="input-field" placeholder="user-name" required>
+                    <input type="text" class="input-field" placeholder="Email-id " required>
+                    <input type="password" class="input-field" placeholder="Enter password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and condition </span>
+                    <button type="submit" class="submit-btn"><a href="#">Register</a></button>
+                </form>
+        
+    </div>
+     
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+        var p=document.getElementById("login1");
+        var q=document.getElementById("register1");
+        var r=document.getElementById("btn1");
+
+        function register1(){
+            p.style.left="-400px";
+            q.style.left="50px";
+            r.style.left="110px";
+        }
+        function login1(){
+            p.style.left="50px";
+            q.style.left="450px";
+            r.style.left="0";
+        }
+          
+         
+    </script> 
+    </section>
+</body>
+</html>
